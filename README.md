@@ -2,25 +2,21 @@
 
 A native macOS dashboard for work across your repositories. This public repository hosts the Homebrew cask and [release downloads](https://github.com/mcclowes/homebrew-greenware/releases).
 
-Requires an Apple Silicon Mac running macOS 14 or later and the [GitHub CLI](https://cli.github.com/).
+Requires an Apple Silicon Mac running macOS 14 or later. Homebrew installs the
+[GitHub CLI](https://cli.github.com/) dependency with the app.
 
 ## Install
 
 ```sh
-brew tap mcclowes/greenware
-```
-
-With Homebrew 6 or later, trust the tap before installing:
-
-```sh
-brew trust --tap mcclowes/greenware
-```
-
-Install the app and GitHub CLI:
-
-```sh
 brew install --cask mcclowes/greenware/greenware
-brew install gh
+```
+
+The full cask name grants trust to this cask during installation. See
+[Homebrew's tap trust guide](https://docs.brew.sh/Tap-Trust).
+
+Sign in to GitHub:
+
+```sh
 gh auth login
 ```
 
