@@ -5,7 +5,7 @@ cask "greenware" do
   url "https://github.com/mcclowes/homebrew-greenware/releases/download/v#{version}/Greenware-#{version}.zip"
   name "Greenware"
   desc "Dashboard for work across your repositories"
-  homepage "https://github.com/mcclowes/greenware"
+  homepage "https://github.com/mcclowes/homebrew-greenware"
 
   depends_on macos: :sonoma
   depends_on arch: :arm64
