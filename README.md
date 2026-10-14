@@ -29,3 +29,7 @@ brew upgrade --cask mcclowes/greenware/greenware
 ```
 
 If GitHub data is missing, run `gh auth status` and sign in with `gh auth login` if needed.
+
+## Checks
+
+GitHub Actions checks every push and pull request with stable Homebrew on macOS 26. It checks cask style, runs the strict cask audit, and fetches the release archive to verify its checksum. The job checks the current tap checkout and doesn't install or launch Greenware.
